@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root
+{
+    --fonte1: 'Dancing Script', cursive;
+    --fonte2: 'Sriracha', cursive;
+    --fonte3: 'Roboto', sans-serif;
+    --fonte4: 'Passion One', sans-serif;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    font-family: var(--fonte3);
+    min-height: 100vh; /* pode ser 100% ou 100vh(view height) vw(view width) */
+    background-color: darkgray;
+    font-size: 1em;
+}
+
+header
+{
+    font-family: var(--fonte2);
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+header > h1
+{
+    padding-top: 50px;
+    /* text-transform: uppercase;  Transformar em maiúscula */
+    font-variant: small-caps; /* Tudo maiúsculo, mas as primeiras são maiores */
+    font-size: 8vw; /* 8% da largura da tela */
+}
+
+header > p
+{
+    padding-bottom: 50px;
+}
+
+header a, footer a
+{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover
+{
+    text-decoration: underline;
+}
+
+section
+{
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 50px;
+}
+
+section > p
+{
+    padding-bottom: 2em;
+}
+
+section.normal
+{
+    background-color: #FFF;
+    color: #000;
+}
+
+section.imagem
+{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.553); /* inset é uma sombra interna */
+    background-size: cover;
+    background-attachment: fixed; /* Criar efeito parallax */
+}
+
+section.imagem > p
+{
+    background-color: rgba(0, 0, 0, 0.527);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;   
+}
+
+section#img01
+{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02
+{   
+    background-image: url(../imagens/background002.jpg);
+}
+
+footer
+{
+    font-family: var(--fonte2);
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+}
